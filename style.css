@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'DINpro';
+    src: url('./fonts/DINPro.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DINPro-bold';
+    src: url('./fonts/DINPro-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'DINPro-medium';
+    src: url('./fonts/DINPro-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'MeriadPro_regular';
+    src: url('./fonts/DINPro-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили заголовка страницы */
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+h1 {
+    font-family: 'DINpro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    padding: 30px 0 20px 0;
+}
+
+.title > p {
+    font-family: 'MeriadPro_regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px 10% 20px;
+}
+
+/* Стили хедера с карточками */
+
+.wrapper_cards {
+    
+    padding: 0 30px 20px 30px;
+}
+
+.title_nokia,
+.title_gasprom,
+.title_saha {
+    font-family: 'DINPro-bold';
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    left: 0;
+    bottom: 10%;
+    text-align: center;
+    width: 100%;
+    top: -60px;
+    cursor: pointer;
+
+}
+
+.title_nokia:hover,
+.title_gasprom:hover,
+.title_saha:hover {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.btn_loader {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn_load_more {
+    background-color: #fff;
+    padding: 15px 100px;
+    border: 2px solid #000;
+    font-family: 'DINPro-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    
+}
+
+.btn_load_more:hover {
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px #5b5858 inset;
+}
+
+/* стили футера */
+
+.wrapper_footer {
+    background-color: #0d1b2b;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+.contacts {
+    font-family: 'MeriadPro_regular';
+    font-style: normal;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: 'DINPro-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.contact_adress > p {
+    padding-top: 20px;
+}
+
+.contacts {
+    margin-right: 50px;
+}
+
+.contacts, .contact_tel > a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.contact_internet {
+    color: #0058a7;
+    border-left: 4px solid #0058a7;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.contact {
+    justify-content: space-between;
+}
+
+.contact_tel {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-top: 2rem;
+    
+}
+
+.contact_internet > a,
+.contact_internet > p,
+.contact_internet > p > a {
+    color: #0058a7;
+    padding-left: 35px;
+}
+
+.fb {
+    padding-top: 20px;
+}
+
+.form {
+    border: 4px solid #243448;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 2rem;
+}
+
+.input_form {
+    background-color: #243448;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 2px;
+    font-family: 'DINpro';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.privat_polit {
+    margin: 10px;
+    font-family: 'DINpro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #0058a7;
+}
+
+.input_submit {
+    background-color: #0d1b2b;
+    border: 3px solid #fff;
+    padding: 10px;
+    margin: 0 30px 0 30px;
+    font-family: 'DINpro';
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+}
+
+.input_submit:hover {
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px #5b5858 inset;
+}
+
+/* responsive */
+
+@media screen and (min-width: 890px) {
+    .wrapper_footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .wrapper_cards {
+        display: flex;
+    }
+    .card_popup > img {
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+    }
+    .card_popup > p {
+        font-size: 1rem;
+    }
+    .wrapper_modal {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .contact {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+/* стили modal (popup) */
+
+.wrapper_modal {
+    position: fixed;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: scroll;
+    left: 0;
+}
+
+.modal_active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    /* overflow-wrap: anywhere; */
+    height: inherit;
+    overflow: scroll;
+}
+
+.content_modal {
+    color: rgb(0, 0, 0);
+    background-color: seashell;
+    max-width: 800px;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 25px;
+}
+
+#clossed {
+    float: right;
+    font-size: 2.5rem;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+#clossed:hover {
+    color: #fa0808;
+    background-color: #d9dad8;
+}
