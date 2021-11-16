@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="title">
+            <h1>РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h1>
+            <!-- <div class="title_text"> -->
+                <p>Коммуникационное агентство – часть 
+                    многофункционального холдинга, 
+                    объединяющего различные компании на территории 
+                    России и ближнего зарубежья.</p>
+                <p>Наши подходы к организации бизнеса и имеющиеся 
+                    ресурсы позволяют одинаково эффективно обеспечивать 
+                    реализацию как крупномасштабных федеральных или 
+                    международных проектов, так и решать небольшие 
+                    локальные задачи. Мы находимся в постоянном развитии, 
+                    расширяя и укрепляя имеющиеся бизнес-направления, 
+                    а также формируя новые.</p>
+            <!-- </div> -->
+        </div>
+    </section>
+    <section>
+        <div id="cards" class='wrapper_cards'>
+            <div class="card_one">
+                <img src="./img/rb_saha.jpg" alt="saha">
+                <h3 onclick="getSaha ()" id="saha" class="title_saha">РУСПУБЛИКА САХА</h3>
+            </div>
+            
+            <div class="card_two">
+                <img src="./img/gasprom.jpg" alt="gasprom">
+                <h3 onclick="getGasprom ()" id="gasprom" class="title_gasprom">ГАЗПРОМ</h3>
+            </div>
+            <div class="card_three">
+                <img src="./img/nokia.jpg" alt="nokia">
+                <h3 onclick="getNokia ()" id="nokia" class="title_nokia">NOKIA</h3>
+            </div>
+
+            <!-- modal window -->
+
+            <div id="popup_saha" class="wrapper_modal">
+                <div id="body_popup" class="modal">
+                    <div id="content_modal" class="content_modal">
+                        <div class="title_popup">
+                            <h3>Респу́блика Саха</h3>
+                            <button id="clossed" onclick="closed_popup ()" class="btn_modal">X</button>
+                        </div>
+                        <div class="card_popup">
+                            <img src="./img/rb_saha.jpg" alt="saha">
+                            <p>Респу́блика Саха́ (Яку́тия) 
+                            (якут. Саха Өрөспүүбүлүкэтэ, Саха Сирэ) — 
+                            самый большой по площади субъект Российской Федерации.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup_gasprom" class="wrapper_modal">
+                <div id="body_popup" class="modal">
+                    <div id="content_modal" class="content_modal">
+                        <div class="title_popup">
+                            <h3>Газпром</h3>
+                            <button id="clossed" onclick="closed_popup ()" class="btn_modal">X</button>
+                        </div>
+                        <div class="card_popup">
+                            <img src="./img/gasprom.jpg" alt="gasprom">
+                            <p>«Газпром» (ПАО «Газпром») — российская транснациональная 
+                                энергетическая компания, более 50 % акций которой принадлежит 
+                                государству. Является холдинговой компанией Группы «Газпром». 
+                                Непосредственно ПАО «Газпром» осуществляет только продажу 
+                                природного газа и сдаёт в аренду свою газотранспортную систему. 
+                                Основные направления деятельности — геологоразведка, добыча, 
+                                транспортировка, хранение, переработка и реализация газа, 
+                                газового конденсата и нефти, реализация газа в качестве моторного 
+                                топлива, а также производство и сбыт тепло- и электроэнергии[5]. 
+                                «Газпром» является владельцем значительной части акций дочерней 
+                                компании отрасли услуг электросвязи Газпром космические системы.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup_nokia" class="wrapper_modal">
+                <div id="body_popup" class="modal">
+                    <div id="content_modal" class="content_modal">
+                        <div class="title_popup">
+                            <h3>Nokia</h3>
+                            <button id="clossed" onclick="closed_popup ()" class="btn_modal">X</button>
+                        </div>
+                            <div class="card_popup">
+                            <img src="./img/nokia.jpg" alt="nokia">
+                            <p>Nokia Corporation (фин. Nokia Oyj, произносится но́киа) — финская 
+                                транснациональная компания, производитель 
+                                телекоммуникационного оборудования для мобильных, 
+                                фиксированных, широкополосных и IP-сетей. В 2000-е 
+                                годы доминировала на мировом рынке мобильных телефонов 
+                                (с 2013 года телефоны под маркой Nokia выпускаются 
+                                другими производителями).</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- end modal -->
+
+        <div class="btn_loader">
+            <button id="loader" onclick="loaderMore ()" class="btn_load_more">ЗАГРУЗИТЬ ЕЩЕ</button>
+        </div>
+    </div>
+    </section>
+    </section>
+    <footer>
+        <div class="wrapper_footer">
+           <div class="contacts">
+                <div class="contact_adress">
+                    <h2>Контакты</h2>
+                    <p>Коммуникационное агентство</p>
+                    <p>344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12 
+                        Бизнес–центр «Рост», оф. 104</p>
+                </div>
+                <div class="contact">
+                    <div class="contact_tel">
+                        <a href="tel:+78613001128">+7 (861) 300-11-28</a>
+                        <a href="tel:+78613001152">+7 (861) 300-11-52</a>
+                        <a href="tel:+78613001152">+7 (861) 300-11-52</a>
+                    </div>   
+                    <div class="contact_internet">
+                        <p>E-mail:</p>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="#" class="fb">Facebook.com/exampleagency</a>
+                    </div> 
+                </div>
+           </div>
+           <div>
+                <form class="form">
+                    <input class="input_form" name="Name" type="Name" placeholder="Полное имя">
+                    <input class="input_form" name="email" type="email" placeholder="E-mail">
+                    <input class="input_form" name="tel" type="tel" placeholder="Телефон">
+                    <textarea class="input_form" name="coment" type="text" placeholder="Пожалуйста, опишите задачу"></textarea>
+                    <a class="privat_polit" href="#">Политика обработки персональных данных</a>
+                    <input class="input_submit" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" form="request">
+                </form> 
+            </div>
+        </div>
+    </footer>
+     
+    <script src="./main.js"></script>
+</body>
+
+</html>
